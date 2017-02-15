@@ -1,5 +1,6 @@
 
 
+
 var answer = 0;
 
 // Function Definitions
@@ -7,9 +8,9 @@ var answer = 0;
 // 1. Write a function called add that takes two arguments and adds them together, returning the result
 
 function add(n1,n2) {
+    var output = '0'
    return n1 + n2
 }
-
 // 2. Write a function called subtract that takes two arguments and subtracts them from each other, returning the result
 
 function subtract(n1,n2) {
@@ -28,6 +29,11 @@ function divide(n1,n2) {
     return n1 % n2
 }
 
+function increment(i) {
+    i = n1 + n2
+    return i++
+}
+
 
 
 // Event Handlers
@@ -39,4 +45,9 @@ document.querySelector('#calc').addEventListener('click', function(e) {
     answer = window[calcFunction](number1, number2);
 
     document.querySelector('#answer').innerHTML = answer;
+    // clear out input fields
+    // document.querySelector('#number1').value = ''
+    // document.querySelector('#number2').value = ''
+
+
 });

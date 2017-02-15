@@ -1,0 +1,16 @@
+* { 
+    box-sizing: border-box;
+}
+img { 
+    width: 100%;
+}
+body {
+    background: lightcoral;
+}
+.label-primary { 
+    font-size: 205%;
+    background: lightgreen;
+}
+label {
+    font-size: 30px;
+}
