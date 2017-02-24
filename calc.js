@@ -26,12 +26,18 @@ function multiply(n1,n2) {
 // 4. Write a function called divide that takes two arguments and divides them from each other, returning the result
 
 function divide(n1,n2) {
-    return n1 % n2
+    return n1 / n2
 }
 
-function increment(i) {
-    i = n1 + n2
-    return i++
+function increment(n1, n2) {
+    answer++;
+    return answer;
+}
+}
+
+function decrement(n1, n2) {
+    answer--;
+    return answer;
 }
 
 
@@ -46,8 +52,8 @@ document.querySelector('#calc').addEventListener('click', function(e) {
 
     document.querySelector('#answer').innerHTML = answer;
     // clear out input fields
-    // document.querySelector('#number1').value = ''
-    // document.querySelector('#number2').value = ''
+    document.querySelector('#number1').value = ''
+    document.querySelector('#number2').value = ''
 
 
 });
